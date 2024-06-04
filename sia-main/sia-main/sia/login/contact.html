@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>StateMaster</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <nav>
+                <h1 class="sub-title">StateMaster.</h1>
+            </nav>
+        </div>
+    </header>
+    <div class="sidebar">
+        <nav>
+            <img src="https://scontent.fdvo2-1.fna.fbcdn.net/v/t39.30808-6/241530303_4670498169674773_162314186567575815_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=8CKmCbfBi9cQ7kNvgHxPd5p&_nc_ht=scontent.fdvo2-1.fna&oh=00_AYBZbHDY3TsFo6OS2-68j4d8DGZzIAbdIXQSl5adujdUjw&oe=665E678A" alt="User Picture" class="user-pic">
+            <div class="user-name">Geric Gultiano</div>
+            <ul class="navbar">
+                <li><a href="homepag.html">Dashboard</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="order.html">Orders</a></li>
+                <li><a href="contact.html"class="active">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="contact">
+        <h2 class="Form">Contact Form</h2>
+        <form class="contact-form">
+      
+          <input type="text" id="fname" name="firstname" placeholder="First Name">
+      
+          <input type="text" id="lname" name="lastname" placeholder="Last Name">
+      
+          <input type="text" id="lname" name="lastname" placeholder="Email">
+
+          <input type="text" id="lname" name="lastname" placeholder="Mobile Number">
+       
+      
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
+</body>
+</html>
+
+    <!----<section class="contact-form">*/
+        <h2>Contact Us</h2>
+        <form action="process_contact.php" method="post">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; StateMaster</p>
+    </footer>
+</body>
+</html>

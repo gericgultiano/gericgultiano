@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', serif;
+    box-sizing: border-box;
+}
+body{
+    background: #050505fc;
+    color: floralwhite;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/009/302/766/non_2x/silhouette-landscape-with-fog-forest-pine-trees-mountains-illustration-of-night-view-mist-black-and-white-good-for-wallpaper-background-banner-cover-poster-free-vector.jpg");
+    background-size: cover;
+    background-position: center;
+    
+}
+.container{
+    padding: 10px 10%;
+    font-size: 10px;
+}
+.header nav h1{
+    font-size: 75px;
+    margin-left: 20px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.log{
+    width: 140px;
+
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 3px px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 29px;
+    position: relative;
+    margin-right: 40px;
+    margin-bottom: 50px;
+   
+
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+
+}
+.header-text h1{
+    font-size: 70px;
+    margin-top: 20%;
+    margin-left: 20px;
+    
+   
+}
+.header-text h1 span{
+    color:#ff004f;
+    width: 120%; /* Ensure row takes full width */
+    padding-left: 1px; /* Adjust padding to move content closer to the left */
+}
+.header-text p{
+    font-size: 33px;
+    margin-left:30px;
+}
+
+.header-text img {
+    max-width: 300px; /* Adjust the size here */
+    border-radius: 30px;
+   /* margin: 0 50px; /* Add some space between the images */
+}
+
+/*--------sub-title---------*/
+.sub-title {
+    font-size: 70px; /* Adjust the size here */
+    color: #ffffff; /* Optional: Change the color for visibility */
+    margin-bottom: 20px; /* Add some space below the subtitle */
+}
+
+/*--------about---------*/
+/*--------about---------*/
+.about {
+    padding: 80px 0;
+    color: #ababab;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    flex-direction: column; /* Ensure column layout */
+    align-items: center; /* Center items horizontally */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    width: 200%; /* Adjust the width as needed to center content */
+    max-width: 1500px; /* Ensure max width for larger screens */
+    margin: 0 auto; /* Center the container */
+    
+}
+
+.row {
+    display: flex;
+    justify-content: center; /* Center the row content */
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 120%;
+    margin-top: 20px; /* Add some space between the subtitle and the row */
+}
+
+.about-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align items to the center */
+    text-align: left; /* Align text to the left */
+}
+
+.about-col img {
+    max-width: 500px; /* Adjust the size here */
+    border-radius: 15px;
+    margin: 40px 0; /* Add some space around the image */
+}
+.about-content h1 {
+    color: #ff004f; /* Highlighted title color */
+    font-size: 69px;
+    
+}
+
+.about-content {
+    max-width: 700px; /* Limit the width of the content for better layout */
+    text-align: left; /* Align text to the left */
+    font-size: 19px; /* Adjust font size */
+    color: #ffffff; /* Ensure the text color matches the design */
+    margin-left: 60px; /* Add some margin to separate content from image */
+    margin-bottom: 3rem;
+}
+.about-content .details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 30px 0;
+    margin-top: 20px;
+
+}
+
+.about-content .details li {
+    flex: 1 1 45%; /* Adjust the width as needed */
+}
+
+.about-content p {
+    margin-bottom: px; /* Add space between ul and the paragraph */
+    font-size: 22px;
+    min-width: none;
+}
+.about-content ul{
+    font-size: 18px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-content {
+        text-align: center; /* Center text on smaller screens */
+        margin-left: 0; /* Remove left margin on smaller screens */
+    }
+    .about-content .details {
+        flex-direction: column; /* Stack ul elements vertically on smaller screens */
+        align-items: center;
+    }
+}
+
+/*-----proj---*/
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background-color: #333; /* Darker background for better contrast */
+    padding: 3rem;
+    box-shadow: 0 4px 6px rgb(237, 231, 231);
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 400px;
+    flex: 1 1 calc(33.333% - 2rem);
+    text-align: center;
+    color: #fff; /* Light text color */
+    text-decoration: none;
+}
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 10px rgba(206, 203, 203, 0.996);
+}
+.project-card h3 {
+    color: #ff004f; /* Highlighted title color */
+    margin-bottom: 1rem;
+}
+.project-card p {
+    color: #dcdcdc; /* Light gray color for description */
+    margin-bottom: 1rem;
+    
+}

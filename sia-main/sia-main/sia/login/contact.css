@@ -1,0 +1,230 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    
+}
+
+/* Header and Navigation */
+header {
+    background-color: #2d003b;
+    color: white;
+    height: 95px;
+    display: flex;
+    box-shadow: 0 0 10px rgba(7, 6, 6, 0.664);
+    background-image: url("https://images5.alphacoders.com/357/thumb-1920-357836.jpg");
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+}
+
+.header nav h1 {
+    font-size: 45px;
+    color: #ffffff;
+    font-weight: bolder;
+    margin-left: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sidebar {
+    background-color: #f3efef;
+    color: white;
+    height: calc(100vh - 95px); /* Full height minus header */
+    width: 230px;
+    position: fixed;
+    top: 95px; /* Adjusted to start below the header */
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(7, 6, 6, 0.664); /* Optional: Add shadow */
+    background-size: cover;
+    background-position: center;
+    z-index: 999;
+    overflow-y: auto; /* Allow scrolling if content overflows */
+}
+
+.user-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.user-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #000000;
+    padding: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.867);
+}
+
+.user-name {
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 50px;
+    border-radius: 3%;
+    border: 2px solid #000000;
+    padding: 6px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.664);
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+    width: 100%;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 3px;
+    padding: 10px 26px;
+    font-size: 10px;
+    width: 99%;
+    box-shadow: 0 0 9px rgba(7, 6, 6, 0.664);
+}
+
+.navbar li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    transition: color 0.3s ease;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: block;
+}
+
+.navbar li a.active,
+.navbar li a:hover {
+    background: rgb(138, 0, 0);
+    color: #0a0a0a;
+    padding: 15px 10px;
+    border-radius: 5px;
+}
+.contact {
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    margin-left: 250px; /* Adjusted to account for the sidebar */
+    overflow-y: auto; /* Allow scrolling if content overflows */
+    height: calc(100vh - 120px); /* Adjust height to fit within viewport */
+  }
+
+.Form {
+    text-align: center;
+    font-size: 36px;
+    color: #2d003b;
+    margin-bottom: 20px;
+}
+.contact-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+
+}
+input[type=text]{
+    width: 40%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 2px solid #807a7a; /* Add border */
+    border-radius: 25px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 15px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    
+  }
+
+  textarea{
+    width: 82%; /* Full width */
+    padding:20px;
+    border-radius: 25px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 10px; /* Add a top margin */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 16px; /* Bottom margin */
+    border: 2px solid #807a7a; /* Add border */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    bottom: 85px;
+    width: 10%;
+    padding: 12px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    font-size: 17px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    border: 2px solid #807a7a; /* Add border */
+    padding: 6px; /* Optional: Add padding between border and image */
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #ff0000;
+  }
+  
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header {
+        width: 100%;
+        height: auto;
+        position: static;
+        box-shadow: none;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: static;
+        box-shadow: none;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .navbar {
+        flex-direction: row;
+        padding-left: 0;
+        gap: 1rem;
+    }
+    
+    .contact {
+        margin-left: 0; /* Adjusted to account for the sidebar */
+        height: auto;
+        overflow-y: visible; /* Allow scrolling if content overflows */
+    }
+}

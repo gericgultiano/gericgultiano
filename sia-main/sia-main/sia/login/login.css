@@ -1,0 +1,75 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #fefdfd;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("https://images5.alphacoders.com/357/thumb-1920-357836.jpg");
+}
+
+.login-container {
+    background-color: rgba(128, 128, 128, 0.199);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(6, 6, 6, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.login-image {
+    width: 100%; 
+    border-radius: 8px 8px 0 0; 
+    margin-bottom: 15px;
+}   
+
+.login-container h2 {
+    color: #cbcbcb;
+}
+
+.login-form {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    color: #cbcbcb;
+}
+
+.form-group label {
+    display: block;
+    margin-top: 15px;
+    color: #cbcbcb;
+    position: relative;
+    align-items: center;
+}
+
+.form-group label input {
+    position: absolute;
+    right: 135px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+.form-group button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 15px 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif; ;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #ff0202;
+}
